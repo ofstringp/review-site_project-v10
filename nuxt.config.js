@@ -1,3 +1,5 @@
+
+require('dotenv').config()
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
@@ -24,6 +26,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -44,7 +47,14 @@ export default {
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/dotenv',
+    'nuxt-cookie-control',
+    ['nuxt-gmaps', {
+      key: process.env.API_KEY
+      // you can use libraries: ['places']
+    }]
+
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -62,5 +72,6 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+
   }
 }

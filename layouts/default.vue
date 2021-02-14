@@ -55,9 +55,14 @@ export default {
           to: { name: 'inspire' }
         },
         {
-          title: 'Landing Page',
+          title: 'Landing',
           icon: 'alert',
-          to: { name: 'landing-page' }
+          to: { name: 'landing-p' }
+        },
+        {
+          title: 'Map',
+          icon: 'map',
+          to: { name: 'maps-p' }
         }
       ]
     }
